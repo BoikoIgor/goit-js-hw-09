@@ -1,7 +1,7 @@
 // Знаходим кнопки за атрибутами
 const startBtn = document.querySelector('button[data-start]');
 const stopBtn = document.querySelector('button[data-stop]');
-
+let intervalId;
 // Для генерування випадкового кольору використовуєм надану функцію
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -19,7 +19,6 @@ startBtn.addEventListener('click', () => {
   // Розблокуєм кнопку Stop
   stopBtn.disabled = false;
   // Запускаєм інтервал і записуємо його ідентифікатор. Інтервал викликатиме функцію changeBackgroundColor кожної секунди
-  const intervalId = null;
   intervalId = setInterval(changeBackgroundColor, 1000);
 });
 
