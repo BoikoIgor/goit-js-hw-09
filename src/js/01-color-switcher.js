@@ -19,7 +19,8 @@ startBtn.addEventListener('click', () => {
   // Розблокуєм кнопку Stop
   stopBtn.disabled = false;
   // Запускаєм інтервал і записуємо його ідентифікатор. Інтервал викликатиме функцію changeBackgroundColor кожної секунди
-  const intervalId = setInterval(changeBackgroundColor, 1000);
+  const intervalId = null;
+  intervalId = setInterval(changeBackgroundColor, 1000);
 });
 
 // Додаємо слухач на клік кнопки Stop
