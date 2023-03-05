@@ -24,10 +24,10 @@ startBtn.addEventListener('click', () => {
 
 // Додаємо слухач на клік кнопки Stop
 stopBtn.addEventListener('click', () => {
-  // Відміняємо інтервал передаючи ідентифікатор
-  clearInterval(intervalId);
   // Розблокуєм кнопку Start
   startBtn.disabled = false;
   // Заблокуєм кнопку Stop
   stopBtn.disabled = true;
+  // Відміняємо інтервал передаючи ідентифікатор
+  clearInterval(intervalId);
 });
